@@ -15,6 +15,6 @@ jobs:
     - uses: actions/checkout@v1
 
     - name: Run a maven package
-      run: mvn validate
+      run: mvn clean package
   
 
