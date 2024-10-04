@@ -16,5 +16,9 @@ jobs:
 
     - name: Run a maven package
       run: mvn clean package
+
+    - name: tomcat deploy
+
+      run: curl -v -u pavan:pavche@01 -T /home/ec2-user/actions-runner/_work/spring-petclinic/spring-petclinic/target/petclinic.war 'http://ec2-52-66-117-249.ap-south-1.compute.amazonaws.com:8081/manager/html'
   
 
