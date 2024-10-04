@@ -1,4 +1,4 @@
-name: hello_job
+name: hello_petclinic
 
 on:
   push:
